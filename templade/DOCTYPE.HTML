@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Números</title>
+</head>
+<body>
+    <h1>Comparador de Números</h1>
+    <form method="POST">
+        <label for="A">Valor de A:</label>
+        <input type="text" id="A" name="A" required>
+        <br>
+        <label for="B">Valor de B:</label>
+        <input type="text" id="B" name="B" required>
+        <br>
+        <label for="C">Valor de C:</label>
+        <input type="text" id="C" name="C" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if result %}
+        <h2>Resultado:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
